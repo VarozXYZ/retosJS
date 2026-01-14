@@ -9,5 +9,8 @@ const output = areValidCredentials('Ritu', 'mylongpassword');
 console.log(output); // --> true */
 
 function areValidCredentials(name, password) {
-  // your code here
+  return name.length > 3 && password.length >= 8;
 }
+
+const output = areValidCredentials('Ritu', 'mylongpassword');
+console.log(output); // --> true

@@ -13,5 +13,11 @@ const output = getNthElement([1, 3, 5], 1);
 console.log(output); // --> 3 */
 
 function getNthElement(array, n) {
-  // your code here
+  if (array.length === 0) {
+    return undefined;
+  }
+  return array[n];
 }
+
+const output = getNthElement([1, 3, 5], 1);
+console.log(output); // --> 3
